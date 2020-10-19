@@ -50,8 +50,26 @@ $ ls
 ## Git configuration
 We will explore some of the git config options, that allows to initiallice are Git configuration, and check configuration parameters if required.
 ```
-$ 
+$ git config --help
+$ git config --global user.name username
+$ git config --global user.email user@server.com
+$ git config --local user.name username
+$ git config --local user.email user@server.com
+$ git config -l
+...
+user.name=username
+user.email=user@server.com
+...
+$
+$ git config -l --show-origin
+...
+file:C:/Users/user/.gitconfig  user.name=username
+file:C:/Users/user/.gitconfig  user.email=user@server.com
+...
+$ git config remote.origin.url
+https://github.com/jlomeli71/miniGitTutorial.git
 ```
+
 
 *****
 
@@ -71,6 +89,71 @@ $ ls
 README.md
 (main *) miniGitTutorial
 ```
+We can create our files on this directory, change the readme file, etc. For example we can create the garbage.txt file and play with it to show the use of git commands.
+```
+$ ls
+README.md
+$ touch garbage.txt
+$ ls
+garbage.txt  README.md
+```
+The _git status_ command can show actions to be executed and the git commands necessary to permoform thouse actions. 
+```
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        garbage.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+First we need to add new or modified files to a _stagging area_. We can do it file per file using the file name or using * as a wild caracter for all files.
+```
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   garbage.txt
+```
+Then we need to commit thouse files to our local repository. The -m option is to add a description of why we are performing the commit.
+```
+$ git commit -m "Just testing"
+[main f27a3cc] Just testing
+ 2 files changed, 87 insertions(+), 2 deletions(-)
+ rewrite README.md (100%)
+ create mode 100644 garbage.txt
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+Now the new files and changes to the files are in your local repository. But in order to push these changes to the remote repository, we need to push them. Also we could verify the destination of the remote repository first:
+```
+$ git config remote.origin.url
+https://github.com/<my_repo_name>/miniGitTutorial.git
+$ git push [origin master]
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.81 KiB | 617.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/<my_repo_name>/miniGitTutorial.git
+   40408ca..f27a3cc  main -> main
+```
+
 
 *****
 
