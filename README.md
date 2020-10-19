@@ -16,6 +16,8 @@ There are many companies that offer their code on this service. Another popular 
 - [Git verification](#git-verification)
 - [Git configuration](#git-configuration)
 - [Creating a repository](#creating-a-repository)
+- [Addiing .gitignore file](#addiing-.gitignore-file)
+- [Additional commands](#additional-commands)
 - [Terminology](#terminology)
 
 *****
@@ -153,8 +155,33 @@ Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/<my_repo_name>/miniGitTutorial.git
    40408ca..f27a3cc  main -> main
 ```
+Also if you need to update your local repository when someelse change files or added new files in the remote repository, you can pull thouse changes:text
+<span >`git hub`</span>
+```
+$ git pull [origin master]
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 678 bytes | 32.00 KiB/s, done.
+From https://github.com/jlomeli71/miniGitTutorial
+   f27a3cc..06c50df  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ garbage.txt | 1 +
+ 1 file changed, 1 insertion(+)
+$ cat garbage.txt
+I added this line on Github.
+```
+*****
 
+## Addiing .gitignore file
 
+*****
+
+## Additional commands
+Here is a list of additional commands to explore:
+- git diff
+- git restore
 *****
 
 ## Terminology
