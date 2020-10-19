@@ -174,7 +174,34 @@ I added this line on Github.
 ```
 *****
 
-## Addiing .gitignore file
+## Addiing _.gitignore_ file
+Adding _.gitignore_ files is easy and it is reccomended. Ussually there are files in the same directory of your repository that you do not want to upload to the server, or there are files you do not want to share.
+just create a _.gitignorefile_ and add name files or extensions of the files you do not want to upload.
+```
+$ touch mypythonfile.py
+$ ls
+garbage.txt  mypythonfile.py  README.md
+$ git status
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mypythonfile.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ touch .gitignore
+$ echo "*.py" >> .gitignore
+$ git status
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+$ git commit -m "Adding .ignore file to my repo"
+[main ee31f56] Adding .ignore file to my repo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+$ git push
+```
+This option is for a sigle repository, but there is also an option to configure a file for all repositories in your local computer.
 
 *****
 
