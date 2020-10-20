@@ -226,13 +226,19 @@ There are many words used here that may requiere further explanation:
 
 ## Additional references
 
-[Git on Wikipedia](https://en.wikipedia.org/wiki/Git)
+[Git on Wikipedia](https://en.wikipedia.org/wiki/Git).
 
-[Github on Wikipedia](https://es.wikipedia.org/wiki/GitHub)
+[Github on Wikipedia](https://es.wikipedia.org/wiki/GitHub).
+
+[Pro-Git Book](https://git-scm.com/book/en/v2) by Scott Chacon and Ben Straub.
 
 Learn Git in 15 Minutes by [Colt Steel](https://www.youtube.com/c/ColtSteeleCode).
 
 [![Learn Git in 15 Minutes](https://img.youtube.com/vi/USjZcfj8yxE/default.jpg)](https://youtu.be/USjZcfj8yxE)
+
+Learn Github in 20 Minutes by [Colt Steel](https://www.youtube.com/c/ColtSteeleCode).
+
+[![Learn Github in 20 Minutes](https://img.youtube.com/vi/nhNq2kIvi9s/default.jpg)](https://youtu.be/nhNq2kIvi9s)
 
 Git & GitHub Crash Course For Beginners by [Traversy Media](https://www.traversymedia.com/).
 
@@ -241,6 +247,10 @@ Git & GitHub Crash Course For Beginners by [Traversy Media](https://www.traversy
 Git and GitHub for Beginners - Crash Course [freeCodeCamp](https://www.freecodecamp.org/).
 
 [![Git and GitHub for Beginners](https://img.youtube.com/vi/RGOj5yH7evk/default.jpg)](https://youtu.be/RGOj5yH7evk)
+
+What is Git | What is GitHub by [Edureka](https://www.edureka.co/).
+
+[![What is Git | What is GitHub](https://img.youtube.com/vi/xuB1Id2Wxak/default.jpg)](https://youtu.be/xuB1Id2Wxak)
 
 SSH Crash Course | With Some DevOps by [Traversy Media](https://www.traversymedia.com/).
 
