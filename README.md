@@ -16,9 +16,10 @@ There are many companies that offer their code on this service. Another popular 
 - [Git verification](#git-verification)
 - [Git configuration](#git-configuration)
 - [Creating a repository](#creating-a-repository)
-- [Addiing .gitignore file](#addiing-.gitignore-file)
+- [Addiing gitignore file](#addiing-gitignore-file)
 - [Additional commands](#additional-commands)
 - [Terminology](#terminology)
+- [Additional references](#additional-references)
 
 *****
 
@@ -174,7 +175,7 @@ I added this line on Github.
 ```
 *****
 
-## Addiing _.gitignore_ file
+## Addiing gitignore file
 Adding _.gitignore_ files is easy and it is reccomended. Ussually there are files in the same directory of your repository that you do not want to upload to the server, or there are files you do not want to share.
 just create a _.gitignorefile_ and add name files or extensions of the files you do not want to upload.
 ```
@@ -222,3 +223,23 @@ There are many words used here that may requiere further explanation:
 - Push: local to remote.
 - Pull: remote to local.
 - Pull request:
+
+## Additional references
+
+[Git on Wikipedia](https://en.wikipedia.org/wiki/Git)
+
+Learn Git in 15 Minutes by [Colt Steel](https://www.youtube.com/c/ColtSteeleCode).
+
+[![Learn Git in 15 Minutes](https://img.youtube.com/vi/USjZcfj8yxE/default.jpg)](https://youtu.be/USjZcfj8yxE)
+
+Git & GitHub Crash Course For Beginners by [Traversy Media](https://www.traversymedia.com/).
+
+[![Git & GitHub Crash Course](https://img.youtube.com/vi/SWYqp7iY_Tc/default.jpg)](https://youtu.be/SWYqp7iY_Tc)
+
+Git and GitHub for Beginners - Crash Course [freeCodeCamp](https://www.freecodecamp.org/).
+
+[![Git and GitHub for Beginners](https://img.youtube.com/vi/RGOj5yH7evk/default.jpg)](https://youtu.be/RGOj5yH7evk)
+
+SSH Crash Course | With Some DevOps by [Traversy Media](https://www.traversymedia.com/).
+
+[![SSH Crash Course](https://img.youtube.com/vi/hQWRp-FdTpc/default.jpg)](https://youtu.be/hQWRp-FdTpc)
