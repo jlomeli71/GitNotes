@@ -227,6 +227,7 @@ There are many words used here that may requiere further explanation:
 ## Additional references
 
 [Git on Wikipedia](https://en.wikipedia.org/wiki/Git)
+
 [Github on Wikipedia](https://es.wikipedia.org/wiki/GitHub)
 
 Learn Git in 15 Minutes by [Colt Steel](https://www.youtube.com/c/ColtSteeleCode).
