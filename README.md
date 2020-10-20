@@ -16,7 +16,7 @@ There are many companies that offer their code on this service. Another popular 
 - [Git verification](#git-verification)
 - [Git configuration](#git-configuration)
 - [Creating a repository](#creating-a-repository)
-- [Adding gitignore file](#addiing-gitignore-file)
+- [Adding gitignore file](#adding-gitignore-file)
 - [Additional commands](#additional-commands)
 - [Terminology](#terminology)
 - [Additional references](#additional-references)
