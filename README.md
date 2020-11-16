@@ -68,7 +68,7 @@ file:C:/Users/user/.gitconfig  user.name=username
 file:C:/Users/user/.gitconfig  user.email=user@server.com
 ...
 $ git config remote.origin.url
-https://github.com/<my_git_account>/GitNotes.git
+https://github.com/<my_git_account>/git-notes.git
 ```
 
 
@@ -83,12 +83,12 @@ $ cd GitHubRepositories/
 ```
 Also to open your account on Github. You can create your repository on Github first and then clone it in your computer. This is the method I will show here (adding more pictures later). One you have 
 ```
-$ git clone https://github.com/<my_git_account>/GitNotes.git
-$ cd GitNotes/
-(main *) GitNotes
+$ git clone https://github.com/<my_git_account>/git-notes.git
+$ cd git-notes/
+(main *) git-notes
 $ ls
 README.md
-(main *) GitNotes
+(main *) git-notes
 ```
 We can create our files on this directory, change the readme file, etc. For example we can create the garbage.txt file and play with it to show the use of git commands.
 ```
@@ -143,7 +143,7 @@ nothing to commit, working tree clean
 Now the new files and changes to the files are in your local repository. But in order to push these changes to the remote repository, we need to push them. Also we could verify the destination of the remote repository first:
 ```
 $ git config remote.origin.url
-https://github.com/<my_git_account>/GitNotes.git
+https://github.com/<my_git_account>/git-notes.git
 $ git push [origin master]
 Enumerating objects: 6, done.
 Counting objects: 100% (6/6), done.
@@ -151,7 +151,7 @@ Delta compression using up to 8 threads
 Compressing objects: 100% (3/3), done.
 Writing objects: 100% (4/4), 1.81 KiB | 617.00 KiB/s, done.
 Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/<my_git_account>/GitNotes.git
+To https://github.com/<my_git_account>/git-notes.git
    40408ca..f27a3cc  main -> main
 ```
 Also if you need to update your local repository when someelse change files or added new files in the remote repository, you can pull thouse changes:text
@@ -163,7 +163,7 @@ remote: Counting objects: 100% (5/5), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), 678 bytes | 32.00 KiB/s, done.
-From https://github.com/<my_git_account>/GitNotes
+From https://github.com/<my_git_account>/git-notes
    f27a3cc..06c50df  main       -> origin/main
 Merge made by the 'recursive' strategy.
  garbage.txt | 1 +
